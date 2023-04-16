@@ -5,7 +5,7 @@ from inputHelpers import *
 armorInitials = {"h":"helmets", "g":"gauntlets", "c":"chestplates", "b":"boots"}
 
 def clear():
-    os.system('clear')
+    os.system('cls' if os.name=='nt' else 'clear')
 
 def helpMenu():
     print("This is the help menu. Congratulations")

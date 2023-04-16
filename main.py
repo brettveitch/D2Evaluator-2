@@ -1,6 +1,8 @@
 from helperCommands import *
 from inputHelpers import getCommand
 
+clear()
+
 def runProgram():
     while(True):
         command = getCommand()
