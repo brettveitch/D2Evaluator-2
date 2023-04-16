@@ -89,7 +89,7 @@ def getUserCharacter():
             return "Titan"
         elif "w" == characterChoice:
             return "Warlock"
-        elif "q" == characterChoice:
+        elif "c" == characterChoice:
             return "cancel"
         elif len(characterChoice) > 1:
             print("Only type one letter")
