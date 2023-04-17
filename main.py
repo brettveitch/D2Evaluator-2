@@ -1,8 +1,6 @@
 from helperCommands import *
 from inputHelpers import getCommand
 
-print("What's up other computer!")
-
 clear()
 
 def runProgram():
