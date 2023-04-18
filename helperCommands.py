@@ -60,7 +60,10 @@ def findLoadout(selectedCharacter):
     print(selectedCharacter.getBestLoadout(focusedStats).getCustomMaxTierTotal(focusedStats))
 
 def evaluate():
-    selectedCharacter = Character(getUserCharacter())
+    className = getUserCharacter()
+    if className == "cancel":
+        return
+    selectedCharacter = Character()
     fileName = getFileChoice()
     selectedCharacter.extractArmorFromCSV(fileName)
     if input(f"\nThere are {selectedCharacter.getCombinations()} combinations. Okay to proceed? (y or n): ") == "n":
