@@ -63,7 +63,7 @@ def evaluate():
     className = getUserCharacter()
     if className == "cancel":
         return
-    selectedCharacter = Character()
+    selectedCharacter = Character(className)
     fileName = getFileChoice()
     selectedCharacter.extractArmorFromCSV(fileName)
     if input(f"\nThere are {selectedCharacter.getCombinations()} combinations. Okay to proceed? (y or n): ") == "n":
