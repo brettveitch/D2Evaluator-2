@@ -4,6 +4,7 @@ import os
 from bungio import Client
 from bungio.models import BungieMembershipType, DestinyActivityModeType, DestinyUser
 
+
 # create the client obj with our bungie authentication
 client = Client(
     bungie_client_id=os.getenv("bungie_client_id"),
@@ -13,7 +14,7 @@ client = Client(
 
 async def main():
     # create a user obj using a known bungie id
-    user = DestinyUser(membership_id=4611686018467765462, membership_type=BungieMembershipType.TIGER_STEAM)
+    user = DestinyUser(membership_id=4611686018432124968, membership_type=BungieMembershipType.TIGER_STEAM)
 
     # iterate thought the raids that user has played
     async for activity in user.yield_activity_history(mode=DestinyActivityModeType.RAID):
