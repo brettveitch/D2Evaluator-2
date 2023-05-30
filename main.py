@@ -2,6 +2,7 @@ from helperCommands import *
 from inputHelpers import getCommand
 
 clear()
+print("Welcome to Destiny 2 Armor Trimmer!\n")
 
 def runProgram():
     while(True):
