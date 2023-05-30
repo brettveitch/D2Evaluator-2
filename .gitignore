@@ -1,11 +1,5 @@
 # Byte-compiled / optimized / DLL files
-<<<<<<< HEAD
-__pycache__/
-csv_folder/
-*.pyc
-=======
 __pycache__
->>>>>>> c25c186 (	modified:   .gitignore)
 *.py[cod]
 
 # C extensions
