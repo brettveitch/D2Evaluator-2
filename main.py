@@ -4,22 +4,19 @@ from inputHelpers import getCommand
 clear()
 print("Welcome to Destiny 2 Armor Trimmer!\n")
 
+commands = {
+    "c": clear,
+    "e": evaluate,
+    "h": helpMenu,
+    "f": find,
+    "t": trim,
+    "i": invalid,
+    "q": quit
+}
+
 def runProgram():
-    while(True):
-        command = getCommand()
-        if command == "q":
-            break
-        if command == "c":
-            clear()
-        if command == "e":
-            evaluate()
-        if command == "h":
-            helpMenu()
-        if command == "f":
-            find()
-        if command == "i":
-            invalid()
-        if command == "t":
-            trim()
+    running = True
+    while(running):
+        running = commands[getCommand()]()
 
 runProgram()
